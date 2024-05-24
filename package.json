@@ -1,0 +1,28 @@
+{
+  "name": "04-multiplication-app",
+  "version": "1.0.0",
+  "description": "App the multiplications whit node and ts",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/app.ts ",
+    "dev:nodemon": "nodemon",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "keywords": [
+    "multiplications"
+  ],
+  "author": "Ivan Aponza",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/yargs": "^17.0.32",
+    "nodemon": "^3.1.0",
+    "rimraf": "^5.0.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
