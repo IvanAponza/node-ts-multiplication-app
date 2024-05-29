@@ -17,6 +17,6 @@ export class ServerApp {
         const table = new CreateTable().execute({ base, limit });
         const saveFile = new SaveFile().execute({ fileContent: table, fileName, fileDestination })
         if(showTable) console.log(table);
-        (saveFile) ? console.log('Saved file!!!') : console.log('File not saved!!')
+        (saveFile) ? console.log('File create!!!') : console.log('File not saved!!')
     }
 }

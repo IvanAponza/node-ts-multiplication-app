@@ -33,4 +33,8 @@ export const yarg = yargs(hideBin(process.argv))
     default: 'outputs',
     describe: 'File destination'
 })
+.check(( argv, options) => {
+    if(argv.b < 1) throw 'Error: la base debe ser mayor a 0';
+    return true;
+})
 .parseSync()
